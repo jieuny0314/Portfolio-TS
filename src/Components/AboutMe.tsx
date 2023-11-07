@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Logo from "../Images/Logo_big.png";
 import Curve from "../Images/curve.png";
-import { useState } from "react";
+import { useAppDispatch } from "../Redux/hook";
+import { setNaviValue } from "../Redux/action";
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from "react-responsive";
 
@@ -14,7 +16,7 @@ interface StyledType {
 const AboutMeContainer = styled.section<StyledType>`
   width: 100vw;
   height: 100vh;
-  padding-top: 100px;
+  padding-top: ${(props) => (props.$ismobile ? "80px" : "100px")};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,6 +194,13 @@ function AboutMe() {
   const [isClicked, setIsClicked] = useState(false);
 
   const [ref, inView] = useInView();
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    if (inView) {
+      dispatch(setNaviValue(0));
+    }
+  }, [inView]);
 
   const handleMouseClicked = () => {
     setIsClicked(!isClicked);
@@ -202,6 +211,7 @@ function AboutMe() {
       $ismobile={isMobile}
       $isbigpc={isBigPC}
       $isclicked={isClicked}
+      id="AboutMe"
     >
       <div onClick={handleMouseClicked} className="logoImgContainer">
         <article className="clickMe">
