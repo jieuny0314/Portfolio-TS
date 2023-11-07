@@ -1,4 +1,5 @@
 import AboutMe from "../Components/AboutMe";
+import Skills from "../Components/Skills";
 import { RefObject } from "react";
 
 interface MainProps {
@@ -8,6 +9,7 @@ function Main({ aboutMeRef }: MainProps) {
   return (
     <div>
       <AboutMe />
+      <Skills />
     </div>
   );
 }
