@@ -301,8 +301,8 @@ function ProjectDetail({ project }: ProjectDetailProps) {
         "자바스크립트로 구현한 코드를 타입스크립트로 리팩토링하는 과정을 거쳤습니다. 실제 프로젝트에 타입스크립트를 사용하며, 에러를 겪고 해결하는 과정에서 더 배우고 익숙해질 수 있었습니다.",
       ],
       link: [
-        ["배포링크", "https://jieuny0314.github.io/portfolio/"],
-        ["깃허브", "https://github.com/jieuny0314/Portfolio"],
+        ["배포링크", "https://jieuny0314.github.io/Portfolio-TS/"],
+        ["깃허브", "https://github.com/jieuny0314/Portfolio-TS"],
       ],
     },
     {
