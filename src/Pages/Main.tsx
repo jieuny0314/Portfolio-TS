@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 import Header from "../Components/Header";
 import AboutMe from "../Components/AboutMe";
 import Skills from "../Components/Skills";
@@ -27,18 +28,24 @@ function Main() {
 
   return (
     <MainContainer>
-      <Header
-        aboutMeRef={aboutMeRef}
-        skillsRef={skillsRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-      />
-      <div ref={aboutMeRef} className="aboutMe" />
-      <AboutMe />
-      <div ref={skillsRef} className="skills" />
-      <Skills />
-      <div ref={projectsRef} className="projects" />
-      <Projects />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <Header
+          aboutMeRef={aboutMeRef}
+          skillsRef={skillsRef}
+          projectsRef={projectsRef}
+          contactRef={contactRef}
+        />
+        <div ref={aboutMeRef} className="aboutMe" />
+        <AboutMe />
+        <div ref={skillsRef} className="skills" />
+        <Skills />
+        <div ref={projectsRef} className="projects" />
+        <Projects />
+      </motion.div>
     </MainContainer>
   );
 }
