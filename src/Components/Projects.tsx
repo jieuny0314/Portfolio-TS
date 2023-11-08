@@ -168,7 +168,7 @@ function Projects() {
       period: "2023.08 - 2023.09",
       stacks: [
         "https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black",
-        "https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
+        "https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=black",
         "https://img.shields.io/badge/styled%20components-DB7093?style=for-the-badge&logo=styled%20components&logoColor=black",
         "https://img.shields.io/badge/redux%20toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=black",
       ],
