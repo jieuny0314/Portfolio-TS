@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
@@ -17,7 +17,7 @@ export type Project = {
     pc: string;
     mobile: string;
   };
-}[];
+};
 
 interface StyledType {
   $ismobile: boolean;
@@ -127,7 +127,7 @@ function Projects() {
     }
   }, [inView]);
 
-  const projects: Project = [
+  const projects: Project[] = [
     {
       id: 1,
       title: "Perpett",
@@ -217,18 +217,16 @@ function Projects() {
       <div className="detective" ref={ref} />
       <FaAngleLeft size="36" className="arrow prev" onClick={prev} />
       <ProjectSliderContainer $ismobile={isMobile}>
-        {/* {projects.map((el, i) => {
-        return (
-          <ProjectCard
-            project={projects[i]}
-            key={el.id}
-            index={currentPr}
-            popUp={popUp}
-            setPopUp={setPopUp}
-            currentPr={currentPr}
-          />
-        );
-      })} */}
+        {projects.map((el, i) => {
+          return (
+            <ProjectCard
+              project={projects[i]}
+              key={el.id}
+              index={currentPr}
+              currentPr={currentPr}
+            />
+          );
+        })}
       </ProjectSliderContainer>
       <FaAngleRight size="36" className="arrow next" onClick={next} />
     </ProjectsContainer>
