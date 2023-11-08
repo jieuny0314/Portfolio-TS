@@ -5,6 +5,7 @@ import Header from "../Components/Header";
 import AboutMe from "../Components/AboutMe";
 import Skills from "../Components/Skills";
 import Projects from "../Components/Projects";
+import Contact from "../Components/Contact";
 
 const MainContainer = styled.main`
   height: 100vh;
@@ -45,6 +46,8 @@ function Main() {
         <Skills />
         <div ref={projectsRef} className="projects" />
         <Projects />
+        <div ref={contactRef} className="contact" />
+        <Contact />
       </motion.div>
     </MainContainer>
   );
