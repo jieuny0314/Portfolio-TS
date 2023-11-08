@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { useRef } from "react";
 import Header from "../Components/Header";
 import AboutMe from "../Components/AboutMe";
 import Skills from "../Components/Skills";
-import { useRef } from "react";
+import Projects from "../Components/Projects";
 
 const MainContainer = styled.main`
   height: 100vh;
@@ -36,6 +37,8 @@ function Main() {
       <AboutMe />
       <div ref={skillsRef} className="skills" />
       <Skills />
+      <div ref={projectsRef} className="projects" />
+      <Projects />
     </MainContainer>
   );
 }
