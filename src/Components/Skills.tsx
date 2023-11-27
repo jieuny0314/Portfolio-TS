@@ -159,7 +159,11 @@ const StackBox = styled.div<StyledType>`
   }
 
   .javaScript {
-    background-image: url("https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1629279836/noticon/qopgwljhqw2ezqxnfjpe.png");
+    background-image: url("https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567008394/noticon/ohybolu4ensol1gzqas1.png");
+  }
+
+  .typeScript {
+    background-image: url("https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913457/noticon/eh4d0dnic4n1neth3fui.png");
   }
 
   .react {
@@ -183,22 +187,32 @@ const StackBox = styled.div<StyledType>`
   }
 
   .htmlMove {
-    left: 105%;
+    top: 65%;
+    left: 98%;
     z-index: 10;
     transition-property: left, top, z-index, transform;
     transition-duration: 1s, 1s, 3s, 2s;
   }
 
   .cssMove {
-    left: -63%;
+    top: 65%;
+    left: -50%;
     z-index: 10;
     transition-property: left, top, z-index, transform;
     transition-duration: 1s, 1s, 3s, 2s;
   }
 
   .javaScriptMove {
-    top: 115%;
-    left: 23%;
+    left: -60%;
+    top: 10%;
+    z-index: 10;
+    transition-property: left, top, z-index, transform;
+    transition-duration: 1s, 1s, 3s, 2s;
+  }
+
+  .typeScriptMove {
+    left: 105%;
+    top: 10%;
     z-index: 10;
     transition-property: left, top, z-index, transform;
     transition-duration: 1s, 1s, 3s, 2s;
@@ -206,15 +220,15 @@ const StackBox = styled.div<StyledType>`
 
   .gitMove {
     top: -40%;
-    left: 82%;
+    left: 75%;
     z-index: 10;
     transition-property: left, top, z-index, transform;
     transition-duration: 1s, 1s, 3s, 2s;
   }
 
   .figmaMove {
-    top: 83%;
-    left: 82%;
+    top: 105%;
+    left: 60%;
     z-index: 10;
     transition-property: left, top, z-index, transform;
     transition-duration: 1s, 1s, 3s, 2s;
@@ -230,15 +244,15 @@ const StackBox = styled.div<StyledType>`
 
   .reduxMove {
     top: -42%;
-    left: -38%;
+    left: -31%;
     z-index: 10;
     transition-property: left, top, z-index, transform;
     transition-duration: 1s, 1s, 3s, 2s;
   }
 
   .styledComponentMove {
-    top: 86%;
-    left: -42%;
+    top: 105%;
+    left: -5%;
     z-index: 10;
     transition-property: left, top, z-index, transform;
     transition-duration: 1s, 1s, 3s, 2s;
@@ -276,6 +290,7 @@ function Skills() {
     false,
     false,
     false,
+    false,
   ]);
 
   const isMobile = useMediaQuery({
@@ -285,7 +300,7 @@ function Skills() {
   function clickedOn() {
     setIsClicked(!isClicked);
     const copy = [...skillClicked];
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 9; i++) {
       copy[i] = false;
     }
     setSkillClicked(copy);
@@ -296,7 +311,7 @@ function Skills() {
     const index = Number(event.classList[event.classList.length - 1]);
     const copy = [...skillClicked];
     copy[index] = !skillClicked[index];
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 9; i++) {
       if (i !== Number(index)) {
         copy[i] = false;
       }
@@ -499,7 +514,7 @@ function Skills() {
                   ? "gitMove skill git opacity"
                   : "gitMove skill git rotate"
                 : "gitMove skill git"
-              : "skill figma"
+              : "skill git"
           }
           onClick={(e) => skillClickedOn(e)}
         >
@@ -550,6 +565,33 @@ function Skills() {
             와이어프레임과 디자인 구현
             <br />
             간단한 상호작용 및 전환 효과 구현
+          </div>
+        </div>
+        <div
+          className={
+            isClicked
+              ? skillClicked[8]
+                ? isMobile
+                  ? "typeScriptMove skill typeScript opacity"
+                  : "typeScriptMove skill typeScript rotate"
+                : "typeScriptMove skill typeScript"
+              : "skill typeScript"
+          }
+          onClick={(e) => skillClickedOn(e)}
+        >
+          <div
+            className={skillClicked[8] ? "background opacity" : "background"}
+          ></div>
+          <div
+            className={
+              skillClicked[8]
+                ? isMobile
+                  ? "contents opacity 8"
+                  : "contents rotate 8"
+                : "contents 8"
+            }
+          >
+            타입 지정을 통한 에러 방지
           </div>
         </div>
       </StackBox>
