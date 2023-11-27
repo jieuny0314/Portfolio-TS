@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+## 👩🏻‍💻 Portfolio
+<img width="1297" alt="스크린샷 2023-09-07 오전 12 57 30" src="https://github.com/jieuny0314/portfolio/assets/77611460/a839e4d6-7879-4fef-9b6c-37da50d68a87">
+<br />
+<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 💡 프로젝트 소개
+- 프로젝트 및 프로필 소개를 위한 포트폴리오입니다.<br/>
+- 원스크롤 페이지 및 반응형으로 구현했습니다.</br>
+- 크게 Header, About Me, Skills, Projects, Contact, Footer 컴포넌트로 구성되어 있습니다.<br />
+- 피드백과 질문은 Contact 컴포넌트에서 메일로 보내실 수 있습니다.
+<br />
 
-## Available Scripts
+## 📎 배포 링크
 
-In the project directory, you can run:
+https://jieuny0314.github.io/Portfolio-TS/
+<br />
+<br />
 
-### `npm start`
+## 🛠 사용한 기술 스택
+### <span> **Front-end** </span>
+<div align="left">
+  <img align="top" src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
+  <img align="top" src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img align="top" src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=black">
+  <img align="top" src="https://img.shields.io/badge/styled%20components-DB7093?style=for-the-badge&logo=styled%20components&logoColor=black">
+  <img align="top" src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+  <img align="top" src="https://img.shields.io/badge/redux%20toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=black">
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### <span>  **Tools** </span>
+<div align="left">
+  <img align="top" src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> 
+  <img align="top" src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+</div>
+<br />
+<br />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ⚡️ 구현 기능 설명
+### <span>**Header** </span>
+- 네비게이션 바의 목록을 누르면 각 컴포넌트의 위치로 스크롤이 이동합니다.
+### <span>**About Me** </span>
+- 로고를 클릭하면 숨겨진 자기소개가 나타납니다.
+### <span>**Skills** </span>
+- 원을 클릭하면 스킬 목록이 나타납니다.
+- 스킬을 클릭하면 해당 스킬에 대한 역량을 보실 수 있습니다.
+### <span>**Projects** </span>
+- 프로젝트 목록은 슬라이드 형식으로, 화살표를 누르면 다음 프로젝트를 보실 수 있습니다.
+- 각 프로젝트에 마우스를 올리면 간단한 소개가 나타납니다.
+- Learn More 버튼을 누르면 프로젝트에 대한 자세한 설명을 보실 수 있습니다.
+### <span>**Contact** </span>
+- 피드백이나 질문들을 저에게 메일로 보내실 수 있습니다.
+### <span>**Footer** </span>
+- 제 블로그와 깃허브로 이동하실 수 있습니다.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
